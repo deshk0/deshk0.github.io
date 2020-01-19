@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
 
+
 @font-face {
     font-family: 'SFUIDISPLAY-REGULAR';
     font-weight: 700, 400;
@@ -12,6 +13,15 @@
     font-style: normal;
     src: url(./SFUIDISPLAY-LIGHT.TTF);
 }
+:root{
+    --black: #1f1f1f;
+    --gray: #333336;
+    --lightGray: #6b6b6f ;
+    --transparent: rgb( 255,255,255, 0);
+    --white: #fff;
+    --EyeGradient: rgb(61, 148, 242);
+    --a: #ceced2;
+}
 
 #button{
     display: flex;
@@ -19,7 +29,7 @@
     margin: auto;
     height: 40px;
     width: 320px;
-    background-color: #333336;
+    background-color: var(--gray);
     border-radius: 10px; 
 }
 #button1{
@@ -29,7 +39,6 @@
     margin: auto;
     height: 32px;
     width: 156px;
-    background-color: #6b6b6f;
     border-radius: 12px;
     color: white; 
 }
@@ -40,9 +49,9 @@
     margin: auto;
     height: 32px;
     width: 156px;
-    background-color: transparent;
-    border-radius: 15px; 
+    border-radius: 12px; 
     color: white;
+
 }
 body{
     font-family: 'SFUIDISPLAY-REGULAR';
@@ -51,7 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: #1f1f1f;
+    background-color: var(--black);
 
 }
 
@@ -66,7 +75,7 @@ body{
     margin: auto;
     height: 40px;
     width: 322px;
-    background-color: #333336;
+    background-color: var(--gray);
     border-radius: 15px;
 
 }
@@ -82,16 +91,249 @@ body{
 }
 #Content{
     flex-grow: 1;
-    background-color: #1f1f1f;
+    background-color: var(--black);
 }
 #Area{
     height: 720px;
     display: flex;
     flex-direction: column;
-    background-color: #1f1f1f;
+    background-color: var(--black);
 
 }
+#MainButtonStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+    width: 155px;
+    background-color: var(--gray);
+    border-radius: 65px;
+}
+
+.ButtonCircle1{
+    width: 30px;
+    height: 30px;
+    
+    margin: 0px 0px 15px 0px;
+    
+
+    border-top: 6px solid var(--lightGray);
+    border-right: 0px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 6px solid var(--lightGray);
+    border-radius: 50px 0px 0px 0px;
+    background-color: transparent;
+}
+.ButtonCircle2{
+    width: 30px;
+    height: 30px;
+    
+    margin: 15px 0px 0px 0px;
+    
+
+    border-top: 0px solid var(--lightGray);
+    border-right: 0px solid var(--lightGray);
+    border-bottom: 6px solid var(--lightGray);
+    border-left: 6px solid var(--lightGray);
+    border-radius: 0px 0px 0px 50px;
+    background-color: transparent;
+}
+.ButtonCircle3{
+    width: 30px;
+    height: 30px;
+    
+    margin: 0px 0px 15px 0px;
+    
+
+
+    border-top: 6px solid var(--lightGray);
+    border-right: 6px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 0px 50px 0px 0px;
+    background-color: transparent;
+}
+.ButtonCircle4{
+
+    width: 30px;
+    height: 30px;
+    
+    margin: 15px 0px 0px 0px;
+    
+      
+    border-top: 0px solid var(--lightGray);
+    border-right: 6px solid var(--lightGray);
+    border-bottom: 6px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 0px 0px 50px 0px;
+    background-color: transparent;
+}
+.ButtonCircles1_1{
+    width: 10px;
+    height: 5px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    left: 25px;
+    bottom: 6px;
+
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles1_2{
+    width: 5px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    right: 6px;
+    
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles2_1{
+    width: 5px;
+    height: 10px;
+    position: relative;
+    bottom: 5px;
+    right: 6px;
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles2_2{
+    width: 10px;
+    height: 5px;
+    position: relative;
+    top: 19px;
+    left: 25px;
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles3_1{
+    width: 10px;
+    height: 5px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    right: 5px;
+    bottom: 6px;
+
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles3_2{
+    width: 5px;
+    height: 9px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles4_1{
+    width: 10px;
+    height: 5px;
+    position: relative;
+    top: 30px;
+    right: 5px;
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles4_2{
+    width: 5px;
+    height: 10px;
+    position: relative;
+    bottom: 12px;
+    left: 30px;
+
+    border-top: 1px solid var(--lightGray);
+    border-right: 1px solid var(--lightGray);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--lightGray);
+}
+.ButtonCircles4_3{
+
+    width: 20px;
+    height: 20px;
+    
+    position: relative;
+    right: 1px;
+    bottom: 22px;    
+    
+      
+    border-top: 0px solid var(--white);
+    border-right: 4px solid var(--white);
+    border-bottom: 4px solid var(--white);
+    border-left: 0px solid var(--white);
+    border-radius: 0px 0px 50px 0px;
+    background-color: transparent;
+}
+.ButtonCircles4_3_1{
+    width: 7px;
+    height: 4px;
+    position: relative;
+    bottom: 26.1px;
+    right: 4px;
+
+    border-top: 0px solid var(--white);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--white);
+}
+.ButtonCircles4_3_2{
+    width: 4px;
+    height: 8px;
+    position: relative;
+    bottom: 55px;
+    left: 19px;
+
+    border-top: 0px solid var(--white);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 0px solid var(--lightGray);
+    border-radius: 100px;
+    background-color: var(--white);
+}
 .BigMenuButtom{
+    display: flex;
     height: 62px;
     width: 62px;
     background-image: -webkit-linear-gradient( 90deg, rgb(61,209,242) 0%, rgb(61,139,242) 100%);
@@ -100,7 +342,240 @@ body{
 .SmallMenuButtom{
     height: 45px;
     width: 45px;
-    background-color: #333336;
+    background-color: var(--gray);
     border-radius: 100px;
 }
-  
+
+
+.ClosedEye2{
+    width: 182px;
+    height: 182px;
+
+
+    border-top: 10px solid var(--EyeGradient);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--EyeGradient);
+    border-radius: 160px 0px 180px 0px ;
+    transform: rotate(45deg);
+    background-color: var(--EyeGradient);
+
+
+}
+.ClosedEye3{
+    width: 180px;
+    height: 184px;
+
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+
+    border-top: 10px solid var(--white);
+    border-right: 0px solid var(--transparent);
+    border-bottom: 0px solid var(--transparent);
+    border-left: 5px solid var(--white);
+    border-radius: 200px 0px 200px 0px ;
+    transform: rotate(180deg);
+    background-color: var(--transparent);
+
+}
+
+.Eye{
+    margin: auto;
+    height: 180px;
+}
+.Eye1{
+    width: 180px;
+    height: 180px;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    border-top: 10px solid var(--white);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--white);
+    border-radius: 160px 0px 180px 0px ;
+    transform: rotate(45deg);
+    background-color: var(--white);
+}
+.Pupil{
+    width: 70px;
+    height: 70px;
+
+    position: relative;
+    bottom: 139px;
+    left: 54px;
+    
+    animation-name: eyeAnimationLeftRight;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    
+    transform: rotate(0deg);
+
+
+    border-top: 10px solid var(--EyeGradient);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--EyeGradient);
+    border-radius: 100px;
+    background-color: var(--EyeGradient);
+}
+.PupilSmall{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    animation-name: smallEyeAnimationLeftRight;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+
+.AcceptCircle{
+    width: 70px;
+    height: 70px;
+
+    margin: 65px 0;
+
+    border-top: 8px solid var(--white);
+    border-right: 8px solid var(--white);
+    border-bottom: 8px solid var(--white);
+    border-left: 8px solid var(--white);
+    border-radius: 100px;
+    background-color: var(--transparent);
+
+
+}
+.AcceptCheck{
+    width: 10px;
+    height: 38px;
+    position: relative;
+    top: 17px;
+    left: 37px;
+    transform: rotate(45deg);
+
+    background-color: var(--white);
+
+}
+.AcceptCheck1{
+    width: 24px;
+    height: 11px;
+    position: relative;
+    top: 30px;
+    right: 14px;
+
+    background-color: var(--white);
+
+}
+
+
+
+
+.Background{
+    width: 180px;
+    height: 80px;
+    position: relative;
+    bottom: 290px;
+    right: 112px;
+}
+.Hand{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.Finger1{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.Finger2{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.Finger3{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.Finger4{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
+.Finger5{
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    bottom: 193px;
+    left: 81px;
+    
+    border-top: 10px solid var(--black);
+    border-right: 0px solid var(--white);
+    border-bottom: 0px solid var(--lightGray);
+    border-left: 10px solid var(--black);
+    border-radius: 100px;
+    background-color: var(--black);
+}
