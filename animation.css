@@ -1,141 +1,137 @@
 @keyframes eyeAnimationLeftRight{
     0%{
-        margin-left: 0px;
+        left: 0px;
     }
     25%{
-        margin-left: 70px;
+        left: 65px;
     }
     50%{
-        margin-left: 0px;
+        left: 0px;
     }
     75%{
-        margin-left: -70px;
+        left: -65px;
     }
     100%{
-        margin-left: 0px;
+        left: 0px;
     }
 }
 @keyframes smallEyeAnimationLeftRight{
     0%{
-        margin-left: 0px;
+        left: 0px;
     }
     25%{
-        margin-left: 90px;
+        left: 73px;
     }
     50%{
-        margin-left: 0px;
+        left: 0px;
     }
     75%{
-        margin-left: -90px;
+        left: -73px;
     }
     100%{
-        margin-left: 0px;
+        left: 0px;
     }
 }
 @keyframes eyeAnimationEight{
     0%{
-        bottom: 139px;
-        left: 54px;
+        bottom: 255px;
+        left: 0px;
     }
 
     10%{
-        bottom: 144px;
-        left: 5px;
+        bottom: 259px;
+        left: -65px;
     }
     20%{
-        bottom: 139px;
-        left: -25px;
+        bottom: 254px;
+        left: -85px;
     }
     30%{
-        bottom: 130px;
-        left: -15px;
+        bottom: 245px;
+        left: -65px;
     }
     40%{
-        bottom: 125px;
-        left: 30px;
+        bottom: 240px;
+        left: -20px;
     }
     50%{
-        bottom: 139px;
-        left: 54px;
+        bottom: 254px;
+        left: 4px;
     }
     60%{
-        bottom: 144px;
-        left: 103px;
+        bottom: 259px;
+        left: 53px;
     }
     70%{
-        bottom: 144px;
-        left: 133px;
+        bottom: 259px;
+        left: 74px;
     }
     80%{
-        bottom: 130px;
-        left: 130px;
+        bottom: 245px;
+        left: 80px;
     }
     90%{
-        bottom: 125px;
-        left: 98px;
+        bottom: 240px;
+        left: 48px;
     }
     100%{
-        bottom: 139px;
-        left: 54px;
+        bottom: 255px;
+        left: 4px;
     }
 }
 @keyframes smallEyeAnimationEight{
     0%{
-        bottom: 193px;
-        left: 81px;
+        bottom: 310px;
+        left: -5px;
     }
 
     10%{
-        bottom: 198px;
-        left: 32px;
+        bottom: 320px;
+        left: -70px;
     }
     20%{
-        bottom: 193px;
-        left: -5px;
+        bottom: 305px;
+        left: -95px;
     }
     30%{
-        bottom: 184px;
-        left: 5px;
+        bottom: 298px;
+        left: -75px;
     }
     40%{
-        bottom: 179px;
-        left: 50px;
+        bottom: 291px;
+        left: -20px;
     }
     50%{
-        bottom: 193px;
-        left: 81px;
+        bottom: 310px;
+        left: 5px;
     }
     60%{
-        bottom: 198px;
-        left: 130px;
+        bottom: 320px;
+        left: 55px;
     }
     70%{
-        bottom: 198px;
-        left: 160px;
+        bottom: 315px;
+        left: 85px;
     }
     80%{
-        bottom: 184px;
-        left: 160px;
+        bottom: 299px;
+        left: 95px;
     }
     90%{
-        bottom: 179px;
-        left: 125px;
+        bottom: 294px;
+        left: 55px;
     }
     100%{
-        bottom: 193px;
-        left: 81px;
+        bottom: 310px;
+        left: -5px;
     }
 }
 @keyframes eyeAnimationClip{
     0%{
-        background-color: var(--EyeGradient);
-    }
-    10%{
-        background-color:  transparent;
-
+        opacity: 1;
     }
     100%{
-        background-color:  transparent;
+        opacity: 0;
     }
 }
 @keyframes eyeAnimationClose{
@@ -184,52 +180,201 @@
     }
 }
 @keyframes eyeAnimationClock{
+
     0%{
-        bottom: 139px;
+        bottom: 288px;
+        left: 0px;
     }
     25%{
-        bottom: 170px;
+        bottom: 250px;
+        left: 80px;
     }
     50%{
-        bottom: 139px;
-    }
+        bottom: 222px;
+        left: 0px;
+    } 
     75%{
-        bottom: 100px;
+        bottom: 250px;
+        left: -80px;
     }
     100%{
-        bottom: 139px;
+        bottom: 288px;
+        left: 0px;
     }
 }
 @keyframes smallEyeAnimationClock{
+
     0%{
-        bottom: 193px;
+        bottom: 351px;
+        left: 0px;
     }
     25%{
-        bottom: 235px;
+        bottom: 307px;
+        left: 90px;
     }
     50%{
-        bottom: 193px;
-    }
+        bottom: 265px;
+        left: 0px;
+    } 
     75%{
-        bottom: 149px;
+        bottom: 307px;
+        left: -90px;
     }
     100%{
-        bottom: 193px;
+        bottom: 351px;
+        left: 0px;
     }
 }
 @keyframes nearAndFar1{
     0%{
-        opacity: 0;
+        filter: blur(2px);
+    }
+    50%{
+        filter: blur(0px);
     }
     100%{
-        opacity: 1;
+        filter: blur(2px);
     }
 }
 @keyframes nearAndFar2{
     0%{
-        opacity: 1;
+        filter: blur(0px);
+    }
+    50%{
+        filter: blur(2px);
     }
     100%{
-        opacity: 0;
+        filter: blur(0px);
     }
 }
+@keyframes eyeAnimationCircle{
+
+    0%{
+        bottom: 288px;
+        left: 0px;
+    }
+    13%{
+        bottom: 276px;
+        left: 50px;
+    }
+    26%{
+        bottom: 250px;
+        left: 80px;
+    }
+    39%{
+        bottom: 238px;
+        left: 50px;
+    }
+    52%{
+        bottom: 222px;
+        left: 0px;
+    }
+    65%{
+        bottom: 234px;
+        left: -50px;
+    }
+    78%{
+        bottom: 250px;
+        left: -80px;
+    } 
+    91%{
+        bottom: 276px;
+        left: -50px;
+    }
+    100%{
+        bottom: 288px;
+        left: 0px;
+    }
+}
+@keyframes smallEyeAnimationCircle{
+
+    0%{
+        bottom: 351px;
+        left: 0px;
+    }
+    13%{
+        bottom: 339px;
+        left: 60px;
+    }
+    26%{
+        bottom: 313px;
+        left: 90px;
+    }
+    39%{
+        bottom: 281px;
+        left: 60px;
+    }
+    52%{
+        bottom: 265px;
+        left: 0px;
+    }
+    65%{
+        bottom: 281px;
+        left: -60px;
+    }
+    78%{
+        bottom: 313px;
+        left: -90px;
+    } 
+    91%{
+        bottom: 339px;
+        left: -60px;
+    }
+    100%{
+        bottom: 351px;
+        left: 0px;
+    }
+}
+@keyframes eyeAnimationHourglass{
+    0%{
+        bottom: 253px;
+        left: 0px;
+    }
+    20%{
+        bottom: 275px;
+        left: -55px;
+    }
+    40%{
+        bottom: 230px;
+        left: -55px;
+    }
+    60%{
+        bottom: 275px;
+        left: 53px;
+    }
+    80%{
+        bottom: 230px;
+        left: 55px;
+    }
+    100%{
+        bottom: 253px;
+        left: 0px;
+    }
+}
+@keyframes smallEyeAnimationHourglass{
+    0%{
+        bottom: 307px;
+        left: 0px;
+    }
+    20%{
+        bottom: 340px;
+        left: -60px;
+    }
+    40%{
+        bottom: 270px;
+        left: -60px;
+    }
+    60%{
+        bottom: 340px;
+        left: 60px;
+    }
+    80%{
+        bottom: 270px;
+        left: 60px;
+    }
+    100%{
+        bottom: 307px;
+        left: 0px;
+    }
+}
+
