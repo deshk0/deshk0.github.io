@@ -1,4 +1,10 @@
 @media(max-height: 700px){
+    body {
+        margin: 0;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
     #Area{
         height: 0px;
         display: flex;
@@ -15,6 +21,34 @@
         display: flex;
         justify-content: space-between;
         margin: 100px auto 30px auto;
+    }
+    element.style {
+        margin: 30px auto;
+    }
+}
+@media(max-height: 600px){
+    body {
+        margin: 0;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    #Area{
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--black);
+    
+    }
+    #Menu {
+        display: flex;
+        margin: 60px auto 22px auto;
+        justify-content: center;
+    }
+    .EyeTraningPage-trainigsToday {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto 30px auto;
     }
     element.style {
         margin: 30px auto;
