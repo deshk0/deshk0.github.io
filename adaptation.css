@@ -1,0 +1,131 @@
+@media (max-width: 1100px) {
+    .Wrapper{
+        min-width: 320px;
+        max-width: 1100px;
+    }
+    :root{
+        --brown: #997253;
+        --white: #fff;
+        --black: #000;
+        --red: #df0c0c;
+    }
+    .Navbar-mobile{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: space-around;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 40%);
+
+    }
+    .Navbar-container{
+        display: none;
+    }
+    .Navbar-mobile-menu{
+        transition: 0.4s;
+
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        text-align: center;
+        background-color: var(--white);
+        position: absolute;
+        top: -255px;
+        box-shadow: 0px 10px 2px 0px rgb(0 0 0 / 40%);
+
+    }
+    .Navbar-mobile-menu_on{
+        transition: 0.4s;
+        opacity: 1;
+        top: 55px;
+    }
+    .Navbar-mobile-menu-href{
+        margin: 10px 0;
+    }
+    .Navbar-mobile-button{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Navbar-mobile-button span{
+        width: 20px;
+        height: 2px;
+        background-color: var(--brown);
+        margin: 4px;
+    }
+    .Navbar-mobile-logo{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    .Block-1-container, .Block-2-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Block-1-img{
+        display: none;
+    }
+    .Block-1-text{
+        width: 190px;
+    }
+    .Block-2-container-img{
+        width: 200px;
+        height: 200px;
+    }
+    .Block-2-container-text{
+        width: 280px;
+    }
+    .Block-2-container-logo-title{
+        margin-top: -40px;
+        margin-bottom: 30px;
+    }
+    .Block:nth-child(3){
+        height: 100%;
+    }
+    .Block-3-container{
+        padding: 20px 0;
+    }
+    .Block-3-container-row{
+        flex-direction: column;
+        margin: 0;
+    }
+    .Block-3-container-row-box{
+        margin: 20px;
+    }
+    .Block-4-container, .Block-5-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Block-4-container-text{
+        margin: 40px 0;
+        width: 280px;
+    }
+    .Block-4-container-button{
+        padding: 20px 10px;
+    }
+    #Footer{
+        background-position-y: 0;
+    }
+    .Block-5-container-contacts{
+        flex-direction: column;
+        font-size: 1em;
+    }
+    .Block-5-container-box-1{
+        width: 280px;
+    }
+    .Form{
+        width: 265px;
+        padding: 15px;
+    }
+    .Form-inputs-box input{
+        width: 250px;
+    }
+}
